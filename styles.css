@@ -139,9 +139,24 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  
-  
-  .search-bar input { width: 100%; }
-  .two-col { flex-direction: column; }
-  .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+  /* Intro text: reduce margins */
+  .intro-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* Two-column section: stack into single column */
+  .two-col {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-direction: column;
+  }
+  .two-col .col { flex: 1 1 100%; }
+
+  /* Menu grid: force 3 columns (2 rows if 6 items) */
+  .menu-grid {
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
