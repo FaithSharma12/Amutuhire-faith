@@ -159,4 +159,24 @@ footer {
     margin-right: 5%;
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* Search bar reposition: hide in top nav, show in secondary nav */
+  .top-nav .search-bar {
+    display: none;
+  }
+  .secondary-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+  .secondary-nav .search-bar {
+    display: block;
+    flex: 1;
+  }
+  .secondary-nav .search-bar input {
+    width: 100%;
+    max-width: none;
+  }
 }
