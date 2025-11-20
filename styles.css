@@ -139,6 +139,7 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .intro-text {padding-left: 10%; padding-right: 10%;}
   
   .search-bar input { width: 100%; }
   .two-col { flex-direction: column; }
